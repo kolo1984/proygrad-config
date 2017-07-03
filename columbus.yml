@@ -6,6 +6,8 @@ eureka:
     fetchRegistry: false
     service-url:
       defaultZone: http://localhost:1111/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.int}      
 logging:  
   file: logs/${spring.application.name}.log
   level:

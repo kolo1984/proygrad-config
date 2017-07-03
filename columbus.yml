@@ -1,16 +1,16 @@
 server:  
-  port: 1111   # HTTP port
+    port: 1111   # HTTP port
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    service-url:
-      defaultZone: http://localhost:1111/eureka
-  instance:
-    instance-id: ${spring.application.name}:${random.int}      
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        service-url:
+        defaultZone: http://localhost:1111/eureka
+    instance:
+        instance-id: ${spring.application.name}:${random.int}      
 logging:  
-  file: logs/${spring.application.name}.log
-  level:
-    com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'
-    com.atsistemas: 'DEBUG'
+    file: logs/${spring.application.name}.log
+    level:
+        com.netflix.discovery: 'OFF'
+        org.springframework.cloud: 'DEBUG'
+        com.atsistemas: 'DEBUG'

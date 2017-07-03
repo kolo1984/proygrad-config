@@ -6,3 +6,7 @@ logging:
   level:
     org.springframework.cloud: 'DEBUG'
     com.proygrad: 'DEBUG'
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/ 

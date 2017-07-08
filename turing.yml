@@ -1,14 +1,12 @@
 server:
-    port: 0   # random HTTP port
+  port: 0   # random HTTP port
 
 logging:
-    file: logs/${spring.application.name}.log
-    level:
-        org.springframework.cloud: 'DEBUG'
-        com.proygrad: 'DEBUG'
+  file: logs/${spring.application.name}.log
+  level:
+    org.springframework.cloud: 'DEBUG'
+    com.proygrad: 'DEBUG'
 eureka:  
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:1111/eureka/ 
-    instance:
-        instance-id: ${spring.application.name}:${random.int}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/ 

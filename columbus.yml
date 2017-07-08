@@ -5,7 +5,7 @@ eureka:
         registerWithEureka: false
         fetchRegistry: false
         service-url:
-        defaultZone: http://localhost:1111/eureka
+            defaultZone: http://localhost:1111/eureka
     instance:
         instance-id: ${spring.application.name}:${random.int}      
 logging:  

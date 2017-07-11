@@ -1,5 +1,5 @@
 server:
-    port: 8090   # 8090 HTTP port
+    port: 0   # random HTTP port
 
 logging:
     file: logs/${spring.application.name}.log

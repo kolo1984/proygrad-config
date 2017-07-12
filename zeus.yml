@@ -1,0 +1,13 @@
+zuul:
+  routes:
+    picasso-server:
+      path: /**
+      serviceId: picasso
+
+
+server:
+  port: 80
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
